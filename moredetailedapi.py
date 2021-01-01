@@ -57,7 +57,7 @@ def simple_get(url, double):
                 return None
 
     except RequestException as e:
-        log_error('Error during requests to {0} : {1}'.format(url, str(e)))
+        print('Error during requests to {0} : {1}'.format(url, str(e)))
         return None
 def is_good_response(resp):
     """
